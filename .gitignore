@@ -2,16 +2,15 @@ node_modules
 
 # Modified from:
 #     https://github.com/github/gitignore/blob/master/Unity.gitignore
-
-/[Ll]ibrary/
-/[Uu]serSettings/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
-/Assets/TextMesh Pro
+Tantra Masters/[Ll]ibrary/
+Tantra Masters/[Uu]serSettings/
+Tantra Masters/[Tt]emp/
+Tantra Masters/[Oo]bj/
+Tantra Masters/[Bb]uild/
+Tantra Masters/[Bb]uilds/
+Tantra Masters/[Ll]ogs/
+Tantra Masters/[Mm]emoryCaptures/
+Tantra Masters/Assets/TextMesh Pro
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # [Aa]ssets/AssetStoreTools*
