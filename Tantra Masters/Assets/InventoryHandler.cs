@@ -25,9 +25,12 @@ public class InventoryHandler : MonoBehaviour
 
     public void LoadInventory()
     {
-        foreach (Transform child in inventoryUI.transform)
+        if (inventoryItems.Count == 0)
         {
-            inventoryItems.Add(child.GetComponent<InventoryItem>());
+            foreach (Transform child in inventoryUI.transform)
+            {
+                inventoryItems.Add(child.GetComponent<InventoryItem>());
+            }
         }
 
         foreach (KeyValuePair<int, InventoryId> kvp in PlayerData.instance.inventoryAPI.inventoryId)

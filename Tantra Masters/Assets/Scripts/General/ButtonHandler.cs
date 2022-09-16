@@ -19,13 +19,13 @@ public class ButtonHandler : MonoBehaviour
     }
 
     public void Inventory()
-    { 
+    {
+        //if (!inventoryUI.activeSelf)
+        //{
+        //    PlayerData.instance.ReloadInventory();
+        //    InventoryHandler.instance.LoadInventory();
+        //}
         inventoryUI.SetActive(!inventoryUI.activeSelf);
-        if (inventoryUI.activeSelf)
-        {
-            PlayerData.instance.ReloadInventory();
-            InventoryHandler.instance.LoadInventory();
-        }
     }
 
     public void Character()
