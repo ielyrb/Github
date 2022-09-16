@@ -12,6 +12,7 @@ public class PlayerData : MonoBehaviour
     public UserDataAPI userDataAPI;
     public CharInfoAPI charInfoAPI;
     public CharStatsAPI charStatsAPI;
+    public InventoryAPI inventoryAPI;
     bool firstLoad = true;
 
     public int maxHp, curHp, tp, patk, matk, pdef, mdef, hit, dodge, crit, criteva;
@@ -64,6 +65,11 @@ public class PlayerData : MonoBehaviour
         StartCoroutine(LoadCharInfo(true,null));
     }
 
+    public void ReloadInventory()
+    {
+        StartCoroutine(LoadInventoryAndEquipped());
+    }
+
     IEnumerator LoadCharInfo(bool isFirstLoad, TantraPlayer player)
     {
         string uri = Globals.characterinfo + "charname=" + userId;
@@ -77,6 +83,7 @@ public class PlayerData : MonoBehaviour
         }
         if (isFirstLoad)
         {
+            StartCoroutine(LoadInventoryAndEquipped());
             StartCoroutine(LoadCharStats());
         }
         else
@@ -87,6 +94,16 @@ public class PlayerData : MonoBehaviour
         }
     }
 
+    IEnumerator LoadInventoryAndEquipped()
+    {
+        string uri = Globals.inventory + "charname=" + userId + "&limit=24";
+        using (UnityWebRequest www = UnityWebRequest.Get(uri))
+        {
+            yield return www.SendWebRequest();
+            inventoryAPI = new();
+            inventoryAPI = JsonConvert.DeserializeObject<InventoryAPI>(www.downloadHandler.text);
+        }
+    }
     IEnumerator LoadCharStats()
     {
         string uri = Globals.characterstats + "charname=" + userId;

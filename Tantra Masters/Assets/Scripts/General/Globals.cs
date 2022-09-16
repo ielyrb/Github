@@ -9,5 +9,5 @@ public class Globals
     public static string characterinfo = "http://masters.tantra-metaverse.com/backend/characterinfo.php?";
     public static string updatecharacterinfo = "http://masters.tantra-metaverse.com/backend/updatecharacterinfo.php?";
     public static string characterstats = "http://masters.tantra-metaverse.com/backend/characterstats.php?";
-    public static string inventory;
+    public static string inventory = "http://masters.tantra-metaverse.com/backend/inventory.php?";
 }

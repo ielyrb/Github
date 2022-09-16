@@ -46,6 +46,21 @@ namespace StarterAssets
 					return;
 				}
 			}
+
+			if (Input.GetKeyDown(KeyCode.I))
+			{
+				ButtonHandler.instance.Inventory();
+				if (ButtonHandler.instance.inventoryUI.activeSelf)
+				{
+					escaped = true;
+					SetCursorState(false);
+				}
+				else
+				{
+					escaped = false;
+					SetCursorState(true);
+				}
+			}
         }
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
