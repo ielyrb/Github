@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdf065dbe8898046bd43342a30a6b52, type: 3}
+  m_Name: Epic Drop
+  m_EditorClassIdentifier: 
+  id: 2
+  drops:
+  - item: {fileID: 11400000, guid: 7a515a9adcf4fab4b8280051230919b8, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 2b790c4e201a2a34998da034119c7b50, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 7268d3d83b82cd44eb14fa2251ef5a03, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 170b97152246a3d4ea47c0d93b273926, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 60f81747e0f461f4988493b31a9afa2f, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: c3185921883921d4298020d9ed01d32a, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: dde998457d956ad4a82956201be41959, type: 2}
+    dropChance: 10

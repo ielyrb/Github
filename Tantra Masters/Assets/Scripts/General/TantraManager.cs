@@ -17,9 +17,14 @@ public class TantraManager : NetworkManager
     {
         base.OnStartServer();
         Camera.main.gameObject.SetActive(false);
-        if (!serverBuild) return;
-        StartCoroutine(SpawnersInit());
-        
+        if (serverBuild)
+        {
+            StartCoroutine(SpawnersInit());
+        }
+        else
+        {
+            //StartCoroutine(FixMonsterParent());
+        }
     }
 
     IEnumerator SpawnersInit()
@@ -39,9 +44,12 @@ public class TantraManager : NetworkManager
         {
             GameObject enemy = Instantiate(enemyPrefab[pos.GetComponentInParent<MonsterSpawner>().level], pos.position, pos.rotation);
             enemy.transform.SetParent(pos.transform, false);
+            enemy.GetComponent<CommonMonster>().originalParent = enemy.transform.parent;
             NetworkServer.Spawn(enemy);
+            enemy.transform.SetParent(enemy.transform.parent.parent.parent, false);
         }
     }
+
     private void OnEnable()
     {
         if (!serverBuild)
@@ -80,15 +88,27 @@ public class TantraManager : NetworkManager
     {
         if (!serverBuild) return;
         int monNum = 0;
+
         if (level == 1)
         {
             monNum = 0;
         }
 
-        if (level == 5)
+        if (level == 10)
         {
             monNum = 1;
         }
+
+        if (level == 20)
+        {
+            monNum = 2;
+        }
+
+        if (level == 50)
+        {
+            monNum = 3;
+        }
+
         StartCoroutine(SpawnComMonster(monNum, pos));
     }
 
@@ -97,6 +117,8 @@ public class TantraManager : NetworkManager
         yield return new WaitForSeconds(5f);
         GameObject enemy = Instantiate(enemyPrefab[monsterId], pos.position, pos.rotation);
         enemy.transform.SetParent(pos.transform, false);
-        NetworkServer.Spawn(enemy);
+        enemy.GetComponent<CommonMonster>().originalParent = pos;
+        NetworkServer.Spawn(enemy); 
+        enemy.transform.SetParent(enemy.transform.parent.parent.parent, false);
     }
 }

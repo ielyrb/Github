@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdf065dbe8898046bd43342a30a6b52, type: 3}
+  m_Name: Uncommon To Rare Drop
+  m_EditorClassIdentifier: 
+  id: 1
+  drops:
+  - item: {fileID: 11400000, guid: 251b5d51104b72b41a2944892ff67fd6, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 815bde36a6853b94eade15653c945638, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: c7e084999e018ab49a182cfb811349bd, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 5917ce042fba5c145881664e2d1a4dfe, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: d4c4daeb669bc314783e3871e36b485f, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 461313a9fc66f4a448939203c57cb2c8, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 4a36a0f1acd0ffb4fa7ee396034ac078, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 513015c770354b64494c0b5cb3e7f891, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: a516326aa74ca3547b240e48394df0ac, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: e923e54cfd60d5f4eb948bb7e6e552a8, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 6f3d4f471af281d429d914dcae1306d9, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 0eab9fb5959204840abf022e3c8c6097, type: 2}
+    dropChance: 50

@@ -15,6 +15,7 @@ public class CharStatsAPI
     public int dodge { get; set; }
     public int crit { get; set; }
     public int criteva { get; set; }
-    public int critboost { get; set; }
-    public int critreduc { get; set; }
+    public float critboost { get; set; }
+    public float critreduc { get; set; }
+    public float dropchance { get; set; }
 }

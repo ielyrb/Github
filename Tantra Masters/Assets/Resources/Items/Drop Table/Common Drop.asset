@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdf065dbe8898046bd43342a30a6b52, type: 3}
+  m_Name: Common Drop
+  m_EditorClassIdentifier: 
+  id: 0
+  drops:
+  - item: {fileID: 11400000, guid: 4c732c030a7e60a4481db0fbe7eb8484, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 86d800987b0e2fe49813393cba47e89b, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 7bd4ba9f6a4d33b418967c829ed4e4d8, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 0ca57fb3e2d839f4fa6dca872a9f7a73, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: d49acf84989794b44bd8beb7862a3132, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: a60a0c632c4e931449bbd16e13be1ea7, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: cb5f38595d989f740b13c683e1f9e6f1, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 7877333c1e169c041a9bba822e935afa, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 551f5415628b3b242b33b0cd1aae933f, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: c772521f0ef10d14a8a72671b7edc19c, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 3294a3dbfccf23a43b53eb522ea81627, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 918ccf228e58b2d44b83c612fc7204c6, type: 2}
+    dropChance: 50
+  - item: {fileID: 11400000, guid: 60fbfa90f5842344a91843a57666bc0d, type: 2}
+    dropChance: 20
+  - item: {fileID: 11400000, guid: cb5f38595d989f740b13c683e1f9e6f1, type: 2}
+    dropChance: 20
+  - item: {fileID: 11400000, guid: 20475e7fd4dec1a4586592db6d949bba, type: 2}
+    dropChance: 20
+  - item: {fileID: 11400000, guid: d3bbb0469e088044687db062e5479427, type: 2}
+    dropChance: 20
+  - item: {fileID: 11400000, guid: d20349e2300f24c4c926f1b3f0b96c79, type: 2}
+    dropChance: 20
+  - item: {fileID: 11400000, guid: 05354b00e4e53a049aaf084c4aca2a3f, type: 2}
+    dropChance: 20
+  - item: {fileID: 11400000, guid: 53cec9f48e5c9f048917c6f3c491df33, type: 2}
+    dropChance: 20

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdf065dbe8898046bd43342a30a6b52, type: 3}
+  m_Name: Legendary Drop
+  m_EditorClassIdentifier: 
+  id: 3
+  drops:
+  - item: {fileID: 11400000, guid: 4bad30a3629063640bae7d6c383b0988, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 08fff39a4c32d3b4bac0798614dda5eb, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 1863d59fbf0acb34fadf17488bcf5239, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 70c6753f9c9753341a9fcaf38827382e, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 4533e6917407d964a847ffe6519345eb, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 069351749dd2c3043994e0872bf90f69, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: 23bdc519730e75345903e4b946b1d3c4, type: 2}
+    dropChance: 10

@@ -5,8 +5,11 @@ using TMPro;
 public class ExpBar : MonoBehaviour
 {
     public static ExpBar instance;
-    public Slider slider;
-    public TextMeshProUGUI amountText;
+    [SerializeField] private Slider slider;
+    [SerializeField] private TextMeshProUGUI amountText;
+    [SerializeField] private GameObject floatingExpPrefab;
+    [SerializeField] private Transform expLogParent;
+    
     int prevAmount;
     int maxAmount;
 
@@ -31,7 +34,19 @@ public class ExpBar : MonoBehaviour
     public void SetExp(int amount)
     {
         slider.value = amount;
-        float percentage = (float)(amount * 100 / maxAmount);
-        amountText.text = percentage.ToString("F2");
+        double percentage = (amount * 100 / maxAmount);
+        amountText.text = percentage.ToString("F3");
+    }
+
+    public void ShowFloatingExp(int amount)
+    {
+        GameObject obj = Instantiate(floatingExpPrefab, floatingExpPrefab.transform.position, Quaternion.identity);
+        obj.GetComponent<FloatingExp>().SetUp(amount);
+        if (expLogParent.transform.childCount >= 5)
+        {
+            Destroy(expLogParent.transform.GetChild(0).gameObject);
+        }
+        obj.transform.SetParent(expLogParent, false);
+        obj.transform.localPosition = new Vector3(0, 0, 0);
     }
 }

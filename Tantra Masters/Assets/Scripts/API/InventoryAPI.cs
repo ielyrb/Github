@@ -1,11 +1,7 @@
 using System.Collections.Generic;
 public class InventoryId
 {
-    public int itemId { get; set; }
     public string itemName { get; set; }
-    public string itemDescription { get; set; }
-    public string grade { get; set; }
-    public Stats stats { get; set; }
     public int upgrade { get; set; }
     public Enchant enchant { get; set; }
 }
@@ -46,12 +42,6 @@ public class Percent
 public class InventoryAPI
 {
     public Dictionary<int,InventoryId> inventoryId { get; set; }
-}
-
-public class Stats
-{
-    public Flat flat { get; set; }
-    public Percent percent { get; set; }
 }
 
 

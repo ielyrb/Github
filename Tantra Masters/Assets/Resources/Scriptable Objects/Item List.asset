@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c6c8ec4c5ca56b4289df5d879a5bb79, type: 3}
+  m_Name: Item List
+  m_EditorClassIdentifier: 
+  itemList:
+  - itemId: 0
+    itemName: Acchada Boots
+    itemDesc: 
+  - itemId: 1
+    itemName: Chori Boots
+    itemDesc: 
+  - itemId: 2
+    itemName: Varman Boots
+    itemDesc: 
+  - itemId: 3
+    itemName: Bracelet of Meghamalin
+    itemDesc: 
+  - itemId: 4
+    itemName: Kambu
+    itemDesc: 
+  - itemId: 5
+    itemName: Khadi
+    itemDesc: 
+  - itemId: 6
+    itemName: Parvati
+    itemDesc: 
+  - itemId: 7
+    itemName: Suvarna
+    itemDesc: 
+  - itemId: 8
+    itemName: Acchada Armor
+    itemDesc: 
+  - itemId: 9
+    itemName: Chori Armor
+    itemDesc: 
+  - itemId: 10
+    itemName: Varman Armor
+    itemDesc: 
+  - itemId: 11
+    itemName: Earring of Meghamalin
+    itemDesc: 
+  - itemId: 12
+    itemName: Jamad
+    itemDesc: 
+  - itemId: 13
+    itemName: Kakana
+    itemDesc: 
+  - itemId: 14
+    itemName: Karnaka
+    itemDesc: 
+  - itemId: 15
+    itemName: Kundala
+    itemDesc: 
+  - itemId: 16
+    itemName: Acchada Gloves
+    itemDesc: 
+  - itemId: 17
+    itemName: Chori Gloves
+    itemDesc: 
+  - itemId: 18
+    itemName: Varman Gloves
+    itemDesc: 
+  - itemId: 19
+    itemName: Acchada Helm
+    itemDesc: 
+  - itemId: 20
+    itemName: Chori Helm
+    itemDesc: 
+  - itemId: 21
+    itemName: Varman Helm
+    itemDesc: 
+  - itemId: 22
+    itemName: Necklace of Meghamalin
+    itemDesc: 
+  - itemId: 23
+    itemName: Necklace of the Sun
+    itemDesc: 
+  - itemId: 24
+    itemName: Ratna
+    itemDesc: 
+  - itemId: 25
+    itemName: Rucaka
+    itemDesc: 
+  - itemId: 26
+    itemName: Taral
+    itemDesc: 
+  - itemId: 27
+    itemName: Acchada Pants
+    itemDesc: 
+  - itemId: 28
+    itemName: Chori Pants
+    itemDesc: 
+  - itemId: 29
+    itemName: Varman Pants
+    itemDesc: 
+  - itemId: 30
+    itemName: Avatamsa
+    itemDesc: 
+  - itemId: 31
+    itemName: Dronaj
+    itemDesc: 
+  - itemId: 32
+    itemName: Kundalin
+    itemDesc: 
+  - itemId: 33
+    itemName: Ran
+    itemDesc: 
+  - itemId: 34
+    itemName: Ring of Meghamalin
+    itemDesc: 
+  - itemId: 35
+    itemName: Old Sword
+    itemDesc: 

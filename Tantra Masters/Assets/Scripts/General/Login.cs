@@ -34,7 +34,6 @@ public class Login : MonoBehaviour
             PlayerData.instance.userDataAPI = new();
             PlayerData.instance.userDataAPI = JsonConvert.DeserializeObject<UserDataAPI>(www.downloadHandler.text);
             PlayerData.instance.LoadData();
-            //SceneManager.LoadScene("Main Game");
         }
     }
 }
