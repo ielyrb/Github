@@ -21,7 +21,7 @@ public class ItemDropManager : MonoBehaviour
         }
     }
 
-    public void InitializeLoot(int _id)
+    public Item InitializeLoot(string playerName, int _id)
     {
         Item item = GetLoot(_id);
         if (item != null)
@@ -34,6 +34,7 @@ public class ItemDropManager : MonoBehaviour
                     GameObject obj = inventory.LoadNewItem(false, item, sprite);
                     if (obj != null)
                     {
+                        NotificationHandler.instance.ShowItemObtain(playerName, item, 1);
                         int id = obj.GetComponent<InventorySlot>().id;
                         string data = JsonConvert.SerializeObject(PlayerData.instance.inventoryAPI.inventoryId[id+1]);;
                         InventoryHandler.instance.UpdateInventory(id+1, data);
@@ -42,6 +43,7 @@ public class ItemDropManager : MonoBehaviour
                 }
             }
         }
+        return item;
     }
 
     private Item GetLoot(int _id)

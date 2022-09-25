@@ -11,6 +11,8 @@ public class ButtonHandler : MonoBehaviour
         if (instance == null)
         { 
             instance = this;
+            characterUI.SetActive(true);
+            characterUI.SetActive(false);
         }
         else
         {
@@ -20,11 +22,6 @@ public class ButtonHandler : MonoBehaviour
 
     public void Inventory()
     {
-        //if (!inventoryUI.activeSelf)
-        //{
-        //    PlayerData.instance.ReloadInventory();
-        //    InventoryHandler.instance.LoadInventory();
-        //}
         inventoryUI.SetActive(!inventoryUI.activeSelf);
     }
 

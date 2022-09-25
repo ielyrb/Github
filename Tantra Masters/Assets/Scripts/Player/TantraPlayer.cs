@@ -507,9 +507,25 @@ public class TantraPlayer : NetworkBehaviour
             int roll = UnityEngine.Random.Range(0, 100);
             if (roll >= 50)
             {
-                ItemDropManager.instance.InitializeLoot(id);
+                Item item = ItemDropManager.instance.InitializeLoot(playerName,id);
+                if (item.itemGrade >= (Item.ItemGrade)3)
+                {
+                    CmdShowItemLoot(playerName, item, item.name);
+                }
             }
         }
+    }
+
+    [Command]
+    void CmdShowItemLoot(string _name, Item item, string itemName)
+    {
+        RpcShowItemLoot(_name, item, itemName);
+    }
+
+    [ClientRpc]
+    void RpcShowItemLoot(string _name, Item item, string itemName)
+    {
+        NotificationHandler.instance.ShowNotification(_name, item, NotificationHandler.NotificationType.Obtain, itemName);
     }
 
     [ClientRpc]

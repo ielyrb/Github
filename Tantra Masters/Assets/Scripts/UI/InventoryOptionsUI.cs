@@ -50,6 +50,8 @@ public class InventoryOptionsUI : MonoBehaviour
     public void Upgrade()
     {
         inventoryItem.OnClick();
+        Item item = inventoryItem.item;
+        ItemUpgradeHandler.instance.OnClick(inventoryItem, item);
         Debug.Log(inventorySlot.id);
     }
 

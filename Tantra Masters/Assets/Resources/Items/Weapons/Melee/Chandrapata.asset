@@ -23,7 +23,7 @@ MonoBehaviour:
     flat:
       hp: 0
       tp: 0
-      patk: 21
+      patk: 44
       matk: 0
       pdef: 0
       mdef: 0
