@@ -59,16 +59,20 @@ public class ItemUpgradeHandler : MonoBehaviour
     public void UpgradeStone()
     {
         Debug.Log("Upgrade Stone clicked");
+        //stoneSelectionHandler.gameObject.SetActive(true);
+        stoneSelectionHandler.SearchStones(0);
     }
 
     public void ProtectionStone()
     {
         Debug.Log("Protection Stone clicked");
+        stoneSelectionHandler.SearchStones(1);
     }
 
     public void SupportStone()
     {
         Debug.Log("Support Stone clicked");
+        stoneSelectionHandler.SearchStones(2);
     }
 
     public void Upgrade()

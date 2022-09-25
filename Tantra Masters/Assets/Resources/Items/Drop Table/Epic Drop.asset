@@ -28,3 +28,9 @@ MonoBehaviour:
     dropChance: 10
   - item: {fileID: 11400000, guid: dde998457d956ad4a82956201be41959, type: 2}
     dropChance: 10
+  - item: {fileID: 11400000, guid: 74abdcf29baec2842a43f85bf132f08e, type: 2}
+    dropChance: 30
+  - item: {fileID: 11400000, guid: 730d677265cad8142a8e293b555486d2, type: 2}
+    dropChance: 10
+  - item: {fileID: 11400000, guid: ff65f13900df84c49b20bbf4339a82e0, type: 2}
+    dropChance: 10

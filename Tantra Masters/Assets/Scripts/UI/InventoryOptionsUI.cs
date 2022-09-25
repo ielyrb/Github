@@ -52,13 +52,11 @@ public class InventoryOptionsUI : MonoBehaviour
         inventoryItem.OnClick();
         Item item = inventoryItem.item;
         ItemUpgradeHandler.instance.OnClick(inventoryItem, item);
-        Debug.Log(inventorySlot.id);
     }
 
     public void Enchant()
     {
         inventoryItem.OnClick();
-        Debug.Log(inventorySlot.id);
     }
 
     public void DestroyItem()

@@ -65,7 +65,10 @@ public class Item : ScriptableObject
         Ring,
         Mount,
         Eyewear,
-        Headdress
+        Headdress,
+        UpgradeStone,
+        ProtectionStone,
+        SupportStone,
     }
 }
 
